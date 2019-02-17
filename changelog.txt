@@ -1,0 +1,33 @@
+# --------------------- #
+# CHANGELOG MEMORY GAME #
+# Author: Damir Calusic #
+# --------------------- #
+
+v.1.2.3 - 20190111
+- Fixed bug where timer function spinned off on manual restart of game
+- Fixed better and faster looping of shuffled cards
+- Added a stats box to display the results
+- Added a name entering popup so users can view their results
+- Added a header and a footer in the html code 
+
+v.1.2.2 - 20190109
+- Fixed Unnecessary semicolons in JavaScript file
+
+v.1.2.1 - 20190108
+- Fixed a simple timer function
+
+v.1.2.0 - 20190108
+- Fixed border box styling on cards container 
+- Fixed some language misspellings
+- Fixed const/lets/var consistency in JavaScript file
+- Fixed function calls consistency in JavaScript file
+- Fixed single/double quote markup to use only single quotes in JavaScript file
+- Fixed so ICONS are hidden with zero opacity until matched
+- Fixed better styling on hover and when cards are unmatched
+
+v.1.1.0 - 20190108
+- Added a popup success message
+- Added GIPHS randomized on success message
+
+v.1.0.0 - 20190108
+- First release

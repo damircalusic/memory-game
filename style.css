@@ -1,0 +1,136 @@
+html{
+    overflow-y:scroll;
+    display:table;
+    width:100%;
+    height:100%;
+}
+body{
+    display:table;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:2rem;
+    font-size:16px;
+    text-align:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body.stats-visible{
+    padding-right:0 !important;
+    padding:2rem 17rem 2rem 2rem !important;
+}
+body.stats-visible #stats{
+    display:block;
+}
+header{
+    position:relative;
+}
+header #restart-game{
+    position:absolute;
+    top:0;
+    right:0;
+}
+#cards-container{
+    margin:0 auto;
+    padding:2rem 0;
+    width:100%;
+    max-width:1024px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cards-container .card{
+    padding:2%;
+    margin-right:1%;
+    margin-bottom:1%;
+    width:24.25%;
+    background:#000;
+    text-align:center;
+    font-size:4rem;
+    flex-direction: column;
+    align-self: stretch;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cards-container .card i{
+    opacity:0;
+    visibility:hidden;
+}
+#cards-container .card:nth-child(4n){
+    margin-right:0;
+}
+#cards-container .card:hover{
+    cursor:pointer;
+    background:rgba(0,0,0,.7); 
+}
+#cards-container .card.displayed{
+    pointer-events:none;
+    background:#F0F0F0;
+}
+#cards-container .card.match{
+    pointer-events:none;
+    background:#0e0;
+    color:#FFF;
+}
+#cards-container .card.displayed i, #cards-container .card.match i{
+    opacity:1;
+    visibility:visible;
+}
+#cards-container .card.disabled{
+    pointer-events:none;
+}
+#cards-container .card.unmatched{
+    pointer-events:none;
+    background:#900;
+    color:#FFF;
+}
+#stats{
+    overflow-y:scroll;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:15rem;
+    height:100%;
+    border-top:1px solid #D0D0D0;
+    border-left:1px solid #D0D0D0;
+    background:#F0F0F0;
+    text-align:left;
+    display:none;
+}
+#stats p{
+    margin:0;
+    padding:0.5em;
+    width:100%;
+    background:#000;
+    color:#FFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#stats span{
+    display:table;
+    width:100%;
+    padding:0.5em;
+    line-height:1.85;
+    vertical-align:middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#stats span:nth-child(even){
+    background:#FFF;
+}
+#stats span img{
+    float:left;
+    margin-right:0.5em;
+}
